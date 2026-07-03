@@ -162,7 +162,7 @@ export default function Footer({ onOpenWaitlist, onOpenDemo, setActiveSection })
           </span>
           <div style={{ display: 'flex', gap: '24px' }}>
             <span>Designed & Engineered globally.</span>
-            <a href="mailto:official@kyzentra.qzz.io" style={{ color: 'var(--text-secondary)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <a href="mailto:official@kyzentra.in" style={{ color: 'var(--text-secondary)', textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '6px' }}>
               <Mail size={12} /> Support Helpdesk
             </a>
           </div>

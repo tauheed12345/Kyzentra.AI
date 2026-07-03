@@ -13,8 +13,8 @@ const ALWAYS_PASS_TEST_KEY = '1x00000000000000000000AA';
 export default function Turnstile({ onSuccess, onError, onExpire }: TurnstileProps) {
   const containerRef = useRef<HTMLDivElement>(null);
 
-  // Prefer the env-var key; fall back to the always-pass test key so the widget never breaks on unwhitelisted domains.
-  const siteKey = import.meta.env.VITE_TURNSTILE_SITE_KEY || ALWAYS_PASS_TEST_KEY;
+  // Set to 'disabled' to completely disable Cloudflare Turnstile.
+  const siteKey = 'disabled';
 
   useEffect(() => {
     if (siteKey === 'disabled') return;

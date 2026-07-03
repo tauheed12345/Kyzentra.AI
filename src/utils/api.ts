@@ -11,7 +11,7 @@ export const submitForm = async (action: string, data: any, _turnstileToken?: st
   const useRelative = import.meta.env.PROD || !isLocalhost;
   
   const url = useRelative 
-    ? '/api/submit'
+    ? '/submit.php'
     : (import.meta.env.VITE_APPS_SCRIPT_URL || 'https://script.google.com/macros/s/AKfycbymnFnkMXj_VlErafiWLPt1uhghfXGG3gSFIA-hpTsyyQBLOp-6BuvX0KSb8aFFqJ8M/exec');
 
   const response = await fetch(url, {
